@@ -778,7 +778,7 @@ For demo: Hardhat local testnet. Same contract, zero gas cost, works offline dur
 |---|---|
 | Abijith U | DevTrails2026 |
 | Tarun Aadarsh B | DevTrails2026 |
-| Priyadharshini | DevTrails2026 |
+| Priyadarshini R | DevTrails2026 |
 | Monish M | DevTrails2026 |
 
 ---
