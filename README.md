@@ -8,7 +8,7 @@ Link: https://drive.google.com/file/d/1gKdPuO2ObIksVcTeWASy1Fr8-T48VCzf/view?usp
 
 | Platform | Coverage | Payout Speed | Premium Range |
 |---|---|---|---|
-| Zomato / Swiggy / Zepto | STFI + RSMD Combined | Under 10 minutes | From ₹25/week |
+| Zomato / Swiggy | STFI + RSMD Combined | Under 10 minutes | From ₹25/week |
 
 **Team:** Abijith U · Tarun Aadarsh B · Priyadarshini R · Monish M
 **Event:** DevTrails 2026 — Guidewire Hackathon · #DevTrails2026
