@@ -8,7 +8,7 @@
 |---|---|---|---|
 | Zomato / Swiggy / Zepto | STFI + RSMD Combined | Under 10 minutes | From ₹25/week |
 
-**Team:** Abijith U · Tarun Aadarsh B · Priyadharshini · Monish M
+**Team:** Abijith U · Tarun Aadarsh B · Priyadarshini R · Monish M
 **Event:** DevTrails 2026 — Guidewire Hackathon · #DevTrails2026
 
 ---
