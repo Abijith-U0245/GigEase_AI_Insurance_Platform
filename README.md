@@ -440,6 +440,8 @@ GigEase uses three purpose-built database layers, each optimised for its specifi
 
 ### 7.1 Layer 1 — PostgreSQL OLTP (Transactional Core, 19 Tables)
 
+https://drive.google.com/file/d/1WqTha5fp-3yVgSlaGgBZLOt-tqF842W5/view?usp=sharing
+
 Full ACID compliance for all financial transactions. Row-level security (GPS data access restricted to fraud service DB role only). PgBouncer connection pooling: 1,000 concurrent app workers share 50 actual DB connections. TimescaleDB extension: GPS data partitioned by week — queries hit only 1 partition instead of full table.
 
 | Table | Key Fields | Purpose |
