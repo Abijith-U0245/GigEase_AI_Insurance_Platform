@@ -366,6 +366,8 @@ GigEase's core operating principle: **pay first, investigate second.** The fraud
 **Rider:** Rajan K (W001) · **Zone:** Velachery, Chennai · **Event:** Cyclone Dana, 5 November 2025
 **Result:** ₹2,595.75 credited via UPI in **10 minutes** — 4 AI agents, 22 checks, 7 API calls, 5 DB writes, 1 UPI transfer
 
+Detailed Computation: https://drive.google.com/file/d/1gKdPuO2ObIksVcTeWASy1Fr8-T48VCzf/view?usp=sharing
+
 ### 6.1 Scenario Setup
 
 | Parameter | Value |
