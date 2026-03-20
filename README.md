@@ -93,10 +93,11 @@ Heavy Rain Alert — Delhi NCR: rain expected in 2 hours, disruption payout mode
 ---
 
 ## 3. Insurance Policy Design
-
 https://drive.google.com/file/d/1-vBrC93bktyT5bFKoTqJbCVV_t2bDEQX/view?usp=sharing
-
 GigEase provides a **single combined policy** covering both STFI (Storm, Typhoon, Flood, Inundation) and RSMD (Riots, Strikes, Malicious Damage) under one weekly premium. One enrolment. One policy. Two risk categories covered simultaneously. No separate policy per category required.
+
+Insurance Policy Document:
+https://drive.google.com/file/d/1-vBrC93bktyT5bFKoTqJbCVV_t2bDEQX/view?usp=sharing
 
 ### 3.1 Core Policy Parameters
 
