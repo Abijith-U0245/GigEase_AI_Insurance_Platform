@@ -2,6 +2,8 @@
 
 > *"When a flood hits Velachery and every enrolled rider receives money in their account before the roads even clear — that is not a demo. That is what this technology was built for."*
 
+Link: https://drive.google.com/file/d/1gKdPuO2ObIksVcTeWASy1Fr8-T48VCzf/view?usp=sharing
+
 **India's First Parametric Insurance Platform for Food Delivery Partners**
 
 | Platform | Coverage | Payout Speed | Premium Range |
