@@ -2,13 +2,15 @@
 
 > *"When a flood hits Velachery and every enrolled rider receives money in their account before the roads even clear — that is not a demo. That is what this technology was built for."*
 
+Link: https://drive.google.com/file/d/1gKdPuO2ObIksVcTeWASy1Fr8-T48VCzf/view?usp=sharing
+
 **India's First Parametric Insurance Platform for Food Delivery Partners**
 
 | Platform | Coverage | Payout Speed | Premium Range |
 |---|---|---|---|
-| Zomato / Swiggy / Zepto | STFI + RSMD Combined | Under 10 minutes | From ₹25/week |
+| Zomato / Swiggy | STFI + RSMD Combined | Under 10 minutes | From ₹25/week |
 
-**Team:** Abijith U · Tarun Aadarsh B · Priyadharshini · Monish M
+**Team:** Abijith U · Tarun Aadarsh B · Priyadarshini R · Monish M
 **Event:** DevTrails 2026 — Guidewire Hackathon · #DevTrails2026
 
 ---
@@ -95,6 +97,9 @@ Heavy Rain Alert — Delhi NCR: rain expected in 2 hours, disruption payout mode
 ## 3. Insurance Policy Design
 
 GigEase provides a **single combined policy** covering both STFI (Storm, Typhoon, Flood, Inundation) and RSMD (Riots, Strikes, Malicious Damage) under one weekly premium. One enrolment. One policy. Two risk categories covered simultaneously. No separate policy per category required.
+
+Insurance Policy Document:
+https://drive.google.com/file/d/1-vBrC93bktyT5bFKoTqJbCVV_t2bDEQX/view?usp=sharing
 
 ### 3.1 Core Policy Parameters
 
@@ -363,6 +368,8 @@ GigEase's core operating principle: **pay first, investigate second.** The fraud
 **Rider:** Rajan K (W001) · **Zone:** Velachery, Chennai · **Event:** Cyclone Dana, 5 November 2025
 **Result:** ₹2,595.75 credited via UPI in **10 minutes** — 4 AI agents, 22 checks, 7 API calls, 5 DB writes, 1 UPI transfer
 
+Detailed Computation: https://drive.google.com/file/d/1gKdPuO2ObIksVcTeWASy1Fr8-T48VCzf/view?usp=sharing
+
 ### 6.1 Scenario Setup
 
 | Parameter | Value |
@@ -440,6 +447,8 @@ GigEase uses three purpose-built database layers, each optimised for its specifi
 
 ### 7.1 Layer 1 — PostgreSQL OLTP (Transactional Core, 19 Tables)
 
+https://drive.google.com/file/d/1WqTha5fp-3yVgSlaGgBZLOt-tqF842W5/view?usp=sharing
+
 Full ACID compliance for all financial transactions. Row-level security (GPS data access restricted to fraud service DB role only). PgBouncer connection pooling: 1,000 concurrent app workers share 50 actual DB connections. TimescaleDB extension: GPS data partitioned by week — queries hit only 1 partition instead of full table.
 
 | Table | Key Fields | Purpose |
@@ -461,6 +470,8 @@ Full ACID compliance for all financial transactions. Row-level security (GPS dat
 | `audit_logs` | `entity`, `action`, `old_value`, `new_value` (jsonb) | Immutable IRDAI audit trail |
 
 ### 7.2 Layer 2 — Apache Cassandra (Real-Time Fraud Signals, 7 Tables)
+
+https://drive.google.com/file/d/1I64uySEREgQ2fsCWAqIMeaSKQD3pYAqf/view?usp=sharing
 
 7 denormalized tables. No joins — ever. Each table keyed for exactly one access pattern. GPS stream: 1M riders × 1 ping/60s = **16,667 req/s peak**. Kafka buffers the stream; Cassandra consumer batch-inserts 1,000 records at a time.
 
@@ -491,7 +502,7 @@ Dimensional model for ICR monitoring, fraud trend analysis, and zone risk report
 
 ---
 
-## 8. Machine Learning System — Three Models
+## 8. Machine Learning System — Three Model
 
 ### 8.1 Model 1 — Risk Prediction (XGBoost + Prophet Ensemble)
 
@@ -590,6 +601,8 @@ Web3.py → Polygon blockchain audit trail
 ```
 
 ### 9.2 Data Flow Timings
+
+https://drive.google.com/file/d/1BCCawjJtCYigT01tUTChpf_f3Yr5pTcq/view?usp=sharing
 
 | Pipeline | Frequency | Scale |
 |---|---|---|
@@ -778,7 +791,7 @@ For demo: Hardhat local testnet. Same contract, zero gas cost, works offline dur
 |---|---|
 | Abijith U | DevTrails2026 |
 | Tarun Aadarsh B | DevTrails2026 |
-| Priyadharshini | DevTrails2026 |
+| Priyadarshini R | DevTrails2026 |
 | Monish M | DevTrails2026 |
 
 ---
