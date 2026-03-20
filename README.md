@@ -464,6 +464,8 @@ Full ACID compliance for all financial transactions. Row-level security (GPS dat
 
 ### 7.2 Layer 2 — Apache Cassandra (Real-Time Fraud Signals, 7 Tables)
 
+https://drive.google.com/file/d/1I64uySEREgQ2fsCWAqIMeaSKQD3pYAqf/view?usp=sharing
+
 7 denormalized tables. No joins — ever. Each table keyed for exactly one access pattern. GPS stream: 1M riders × 1 ping/60s = **16,667 req/s peak**. Kafka buffers the stream; Cassandra consumer batch-inserts 1,000 records at a time.
 
 | Table | Partition Key / Purpose |
