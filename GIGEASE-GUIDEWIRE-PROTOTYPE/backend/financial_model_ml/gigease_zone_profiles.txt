@@ -1,0 +1,31 @@
+GigEase Zone Profiles - Chennai
+
+Zone Name: Velachery
+Velachery is a highly flood-prone zone (risk score: 0.82) characterized by extensive low-elevation residential clusters built strictly upon historic marshlands. Drainage quality is severely poor. During the Northeast Monsoon, standard rainfall regularly triggers 3-7 day disruption events, resulting in the highest historic claim frequency in the system.
+
+Zone Name: T Nagar
+T Nagar serves as a central commercial and retail heart of the city (risk score: 0.35). It experiences moderate flood risks, but is acutely prone to widespread RSMD disruptions (protests, curfews) due to major political rallies taking place around Panagal Park. Traffic congestion is perpetually high.
+
+Zone Name: Adyar
+Adyar is a medium-elevation residential and educational zone (risk score: 0.28). Benefiting from proximity to the Adyar River's estuary and moderate drainage infrastructure, extreme flood water recedes quickly. Claim frequency remains moderately low, usually tied to extreme cyclonic activity rather than standard monsoonal rains.
+
+Zone Name: Anna Nagar
+Anna Nagar is a premium, well-planned residential neighborhood (risk score: 0.22) positioned on higher elevation with modern grid layout drainage. Flood events are extremely rare. Gig delivery income here is notably high, though summer heatwaves drastically reduce working hours. Very low historic claim frequency.
+
+Zone Name: Sholinganallur
+Sholinganallur is an intense IT corridor (risk score: 0.65) situated linearly along the OMR. Because it flanks massive wetlands, monsoon rains heavily impact localized arterial roads, significantly disrupting deliveries. Highly susceptible to both sporadic waterlogging and corporate holiday drops. 
+
+Zone Name: Tambaram
+Tambaram functions as a vast southern suburban gateway (risk score: 0.40). Elevation is generally favorable but outlying sub-localities suffer from sporadic flash influxes. Generally stable during the monsoon unless prolonged multi-day precipitation forces mass evacuations.
+
+Zone Name: Guindy
+Guindy acts as a major transit and industrial hub (risk score: 0.30). It features good storm drains and main arterial bypasses that largely resist typical floods. However, due to the heavy volume of political motorcades and industrial sector activity, it experiences intermittent RSMD bottlenecks from strikes.
+
+Zone Name: Perambur
+Perambur is a densely populated northern residential and railway hub (risk score: 0.55). It suffers from aging municipal storm drains, commonly resulting in significant localized water stagnation. Historic claim frequency maps heavily correlated with sustained monsoon bursts.
+
+Zone Name: Mylapore
+Mylapore is a historic cultural center (risk score: 0.25). Situated relatively close to the shore with stable elevation, flooding is uncommon except in extreme tidal convergence events. Delivery activity remains high, dropping mostly during localized cultural festival congestion.
+
+Zone Name: Pallikaranai
+Pallikaranai is a low-lying coastal suburb south of Chennai (risk score: 0.60). It faces moderate flood risk due to poor drainage in its low-elevation natural marshland sections. Gig activity is heavily impacted by both northeast monsoon surges and cyclone events. Strongly connected to the IT corridor, it features a very high volume of active delivery workers.
