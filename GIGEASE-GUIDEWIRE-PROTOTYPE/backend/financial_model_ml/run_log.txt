@@ -1,0 +1,86 @@
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\callback.py:385: UserWarning: [14:11:34] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\callback.py:385: UserWarning: [14:11:34] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\callback.py:385: UserWarning: [14:11:34] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\callback.py:385: UserWarning: [14:11:34] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\callback.py:385: UserWarning: [14:11:34] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\training.py:200: UserWarning: [14:11:35] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+=== SECTION 2: DATA LOADING AND PREPROCESSING ===
+Loaded training data: 520 rows, 77 total columns.
+Total rows: 520, feature count = 70
+Class distribution:
+claim_triggered
+0    506
+1     14
+Name: count, dtype: int64
+Count where y_class=1: 14
+scale_pos_weight: 36.14
+
+=== SECTION 3: TASK 1 CLASSIFIER TRAINING ===
+Fold 1 | Best Iter: 0 | Train AUC: 1.0000 | Val AUC: 1.0000 | Val Prec: 1.0000 | Val Rec: 1.0000 | Val F1: 1.0000
+Fold 2 | Best Iter: 0 | Train AUC: 1.0000 | Val AUC: 1.0000 | Val Prec: 1.0000 | Val Rec: 1.0000 | Val F1: 1.0000
+Fold 3 | Best Iter: 2 | Train AUC: 1.0000 | Val AUC: 1.0000 | Val Prec: 0.7500 | Val Rec: 1.0000 | Val F1: 0.8571
+Fold 4 | Best Iter: 2 | Train AUC: 1.0000 | Val AUC: 1.0000 | Val Prec: 1.0000 | Val Rec: 0.6667 | Val F1: 0.8000
+Fold 5 | Best Iter: 1 | Train AUC: 1.0000 | Val AUC: 1.0000 | Val Prec: 1.0000 | Val Rec: 1.0000 | Val F1: 1.0000
+
+--- Classifier Cross-Validation Summary ---
+Mean Val AUC: 1.0000 ± 0.0000
+Mean Val Recall: 0.9333
+Mean Val F1: 0.9314
+
+=== SECTION 4: TASK 2 REGRESSOR TRAINING ===
+Positive rows used for regression training: 14
+Fold 1 | Best Iter: 0 | Train RMSE: 702.28 | Val RMSE: 182.05 | Val MAE: 125.72
+Fold 2 | Best Iter: 196 | Train RMSE: 113.89 | Val RMSE: 453.03 | Val MAE: 400.70
+Fold 3 | Best Iter: 1 | Train RMSE: 443.11 | Val RMSE: 819.42 | Val MAE: 510.37
+
+--- Regressor Summary ---
+Mean Val RMSE: 484.83 (Target < 150 INR)
+Mean Val MAE: 345.60 (Target < 100 INR)
+WARNING: Regressor targets not fully met.
+
+=== SECTION 6: FORMULA VALIDATION ===
+Column compared      | Formula MAE     | Max error  | Pass/Fail
+-----------------------------------------------------------------
+weekly_premium_inr   | 3.58            | 13.52      | Pass
+claim_amount_inr     | 138.95          | 407.78     | Fail
+sum_insured          | 0.00            | 0.01       | Pass
+Failed rows for weekly_premium_inr (>5 INR diff):
+  Worker: W001 Week: 2024-04-08 | Formula: 103.38 CSV: 111.1
+  Worker: W001 Week: 2024-05-13 | Formula: 108.98 CSV: 116.17
+  Worker: W001 Week: 2024-07-01 | Formula: 125.71 CSV: 120.09
+  Worker: W001 Week: 2024-07-15 | Formula: 124.97 CSV: 118.8
+  Worker: W001 Week: 2024-07-22 | Formula: 124.31 CSV: 117.52
+Failed rows for claim_amount_inr (>5 INR diff):
+  Worker: W001 Week: 2024-10-21 | Formula: 1321.67 CSV: 1416.07
+  Worker: W001 Week: 2024-10-28 | Formula: 2373.84 CSV: 2225.48
+  Worker: W001 Week: 2024-12-02 | Formula: 1697.55 CSV: 1591.46
+  Worker: W001 Week: 2024-12-09 | Formula: 1382.09 CSV: 1480.81
+  Worker: W002 Week: 2024-12-02 | Formula: 1566.26 CSV: 1678.14
+
+=== SECTION 7: TEST FILES VALIDATION ===
+
+Result Table: T001_enriched.csv
+Traceback (most recent call last):
+  File "C:\Users\tarun aadaarsh\GIGEASE-GUIDEWIRE-DATASET\gigease_financial_model.py", line 499, in <module>
+    act_c = int(row['claim_triggered'])
+  File "C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\pandas\core\series.py", line 251, in wrapper
+    raise TypeError(f"cannot convert the series to {converter}")
+TypeError: cannot convert the series to <class 'int'>

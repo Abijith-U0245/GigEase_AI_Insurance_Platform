@@ -1,0 +1,2 @@
+# GigEase SQLite loader — Python 3.10+
+pandas>=2.0.0,<3

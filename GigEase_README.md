@@ -783,6 +783,11 @@ For demo: Hardhat local testnet. Same contract, zero gas cost, works offline dur
 
 ---
 
+## 📁 Project Assets & Documentation
+
+> All diagrams, policy documents, database schemas, ML model flows, and design files are available in the shared drive:
+> **[GigEase — Complete Project Drive](https://drive.google.com/drive/folders/1F5CfYnu5FC5AP3F7LvtGqSQmAd2889XE)**
+
 <div align="center">
 
 **GigEase — Protecting Every Delivery, Every Day**
