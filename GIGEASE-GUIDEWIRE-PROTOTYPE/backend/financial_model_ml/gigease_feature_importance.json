@@ -1,0 +1,106 @@
+{
+  "classifier_top20": [
+    {
+      "feature": "income_vs_peer_ratio",
+      "shap_importance": 321.6344909667969
+    },
+    {
+      "feature": "daily_zero_income_days",
+      "shap_importance": 192.11460876464844
+    },
+    {
+      "feature": "daily_income_thu",
+      "shap_importance": 140.64320373535156
+    },
+    {
+      "feature": "w_actual",
+      "shap_importance": 124.81305694580078
+    },
+    {
+      "feature": "daily_claim_signal_days",
+      "shap_importance": 92.74162292480469
+    },
+    {
+      "feature": "daily_income_wed",
+      "shap_importance": 82.24575805664062
+    },
+    {
+      "feature": "daily_bonus_total",
+      "shap_importance": 44.89470291137695
+    },
+    {
+      "feature": "order_earnings",
+      "shap_importance": 11.012707710266113
+    },
+    {
+      "feature": "daily_income_fri",
+      "shap_importance": 4.696096420288086
+    },
+    {
+      "feature": "order_rejection_rate",
+      "shap_importance": 3.4453887939453125
+    }
+  ],
+  "regressor_top15": [
+    {
+      "feature": "w_expected",
+      "gain_importance": 613524.5
+    },
+    {
+      "feature": "total_login_hours",
+      "gain_importance": 584775.1875
+    },
+    {
+      "feature": "google_maps_congestion_index",
+      "gain_importance": 375652.875
+    },
+    {
+      "feature": "max_daily_rainfall_mm",
+      "gain_importance": 272031.34375
+    },
+    {
+      "feature": "w_avg_12wk",
+      "gain_importance": 267963.59375
+    },
+    {
+      "feature": "income_vs_peer_ratio",
+      "gain_importance": 258216.6875
+    },
+    {
+      "feature": "primary_zone",
+      "gain_importance": 224178.859375
+    },
+    {
+      "feature": "rainfall_mm",
+      "gain_importance": 196138.3125
+    },
+    {
+      "feature": "experience_months",
+      "gain_importance": 191075.671875
+    },
+    {
+      "feature": "order_rejection_rate",
+      "gain_importance": 187860.0625
+    },
+    {
+      "feature": "fraud_model_score",
+      "gain_importance": 147735.5625
+    },
+    {
+      "feature": "order_earnings",
+      "gain_importance": 141470.6875
+    },
+    {
+      "feature": "daily_income_trajectory_slope",
+      "gain_importance": 122476.1953125
+    },
+    {
+      "feature": "w_actual",
+      "gain_importance": 113566.234375
+    },
+    {
+      "feature": "daily_zero_income_days",
+      "gain_importance": 106263.3515625
+    }
+  ]
+}

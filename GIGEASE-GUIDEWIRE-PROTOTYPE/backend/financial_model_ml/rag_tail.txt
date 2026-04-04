@@ -1,0 +1,4 @@
+WARNING: GOOGLE_API_KEY not set. Embedding tests might fail or fall back depending on library config.
+Vector Store creation/test failed: 1 validation error for GoogleGenerativeAIEmbeddings
+  Value error, API key required for Gemini Developer API. Provide api_key parameter or set GOOGLE_API_KEY/GEMINI_API_KEY environment variable. [type=value_error, input_value={'model': 'models/embedding-001'}, input_type=dict]
+    For further information visit https://errors.pydantic.dev/2.11/v/value_error

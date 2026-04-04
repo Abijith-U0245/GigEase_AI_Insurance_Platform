@@ -1,0 +1,30 @@
+AMT:1537.12 PRD_AMT:1639.59 | PROB:0.525 | AUTO_APPROVE | F.Rev:False
+Summary T004_enriched.csv | Rows: 18 | Correct: 18 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T005_enriched.csv
+T005   | 2024-08-12 | ActCLM:1 PRD:1 | ActAMT:3258.86 PRD_AMT:3476.12 | PROB:0.525 | AUTO_APPROVE | F.Rev:True
+Summary T005_enriched.csv | Rows: 26 | Correct: 26 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T006_enriched.csv
+T006   | 2024-09-23 | ActCLM:1 PRD:1 | ActAMT:626.11 PRD_AMT:1252.22 | PROB:0.525 | SOFT_FLAG    | F.Rev:True
+Summary T006_enriched.csv | Rows: 9 | Correct: 9 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T007_enriched.csv
+Summary T007_enriched.csv | Rows: 13 | Correct: 13 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T008_enriched.csv
+Summary T008_enriched.csv | Rows: 9 | Correct: 9 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+=== SECTION 8: SHAP AND FEATURE IMPORTANCE ===
+Traceback (most recent call last):
+  File "C:\Users\tarun aadaarsh\GIGEASE-GUIDEWIRE-DATASET\gigease_financial_model.py", line 525, in <module>
+    explainer = shap.TreeExplainer(final_clf)
+  File "C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\shap\explainers\_tree.py", line 278, in __init__
+    self.model = TreeEnsemble(model, self.data, self.data_missing, model_output)
+  File "C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\shap\explainers\_tree.py", line 1261, in __init__
+    self._set_xgboost_model_attributes(
+  File "C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\shap\explainers\_tree.py", line 1506, in _set_xgboost_model_attributes
+    loader = XGBTreeModelLoader(self.original_model)
+  File "C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\shap\explainers\_tree.py", line 2104, in __init__
+    self.base_score = float(learner_model_param["base_score"])
+ValueError: could not convert string to float: '[5E-1]'
