@@ -6,7 +6,7 @@
 
 | | |
 |---|---|
-| **Team** | Abijith U · Tarun Aadarsh B · Priyadharshini · Monish M |
+| **Team** | Abijith U · Tarun Aadarsh B · Priyadarshini R· Monish M |
 | **Platform** | Zomato & Swiggy delivery partners |
 | **Coverage** | STFI + RSMD Combined Parametric Policy |
 | **Payout Speed** | Under 10 minutes — zero worker action |
