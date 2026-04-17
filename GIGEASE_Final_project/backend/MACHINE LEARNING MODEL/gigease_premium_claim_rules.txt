@@ -1,0 +1,71 @@
+GigEase Premium Calculation Formula — Complete Breakdown
+
+STEP 1: Sum Insured Calculation
+sum_insured = max(Rs.3000, min(Rs.15000, 1.5 × W_avg))
+W_avg is the worker's 12-week average income. A worker earning Rs.4000/week gets sum_insured = Rs.6000.
+
+STEP 2: Base Premium
+P_base = (0.05 × sum_insured) / 4
+This spreads the annual 5% actuarial rate across 4 quarters. For sum_insured Rs.6000, P_base = Rs.75.
+
+STEP 3: Premium Score Components
+The premium score combines 4 risk factors:
+- Weather Risk (30% weight): min(1.0, max_daily_rainfall_mm / 180) × 0.3. Heavier rainfall = higher premium.
+- Humidity (20% weight): (humidity_avg_pct / 100) × 0.2. High humidity correlates with flooding.
+- Zone Risk (30% weight): zone_risk_score × 0.3. From Model 1 XGBoost+Prophet ensemble.
+- Season (20% weight): 1.5 if northeast monsoon else 0.7, multiplied by 0.2. Oct-Dec monsoon = higher loading.
+
+STEP 4: Claims Loading
+Based on claims in last 4 weeks:
+- 0 claims: 0% loading
+- 1 claim: 5% loading
+- 2 claims: 12% loading
+- 3+ claims: 25% loading
+
+STEP 5: Final Premium
+P_final = max(Rs.25, min(Rs.250, P_adjusted × (1 + claims_loading)))
+Capped between Rs.25/week minimum and Rs.250/week maximum.
+
+Example: Worker in Velachery, November monsoon, 142mm rainfall, zone_risk 0.82:
+- sum_insured = Rs.6000, P_base = Rs.75
+- weather_risk = min(1, 142/180) × 0.3 = 0.237
+- humidity = 0.88 × 0.2 = 0.176
+- zone_risk = 0.82 × 0.3 = 0.246
+- season = 1.5 × 0.2 = 0.300
+- premium_score = 0.959
+- P_adjusted = Rs.75 × 1.959 = Rs.146.93
+- With 0 claims: P_final = Rs.147
+
+---
+
+GigEase Claim Trigger Logic — When Does a Payout Happen?
+
+PREREQUISITE: Policy must be active. Fraud action must NOT be AUTO_REJECT.
+
+STEP 1: Event Confirmation
+Either STFI (Short-Term Flood Impact) or RSMD (Rainfall Severity and Mobility Disruption) must be confirmed.
+- STFI triggers when rainfall > 64.5mm in a day AND flood disruption confirmed.
+- RSMD triggers when cumulative rainfall > 100mm over 3 days and mobility score drops below 0.4.
+
+STEP 2: Income Threshold Check
+W_actual must fall below 60% of W_expected.
+threshold = 0.60 × W_expected
+If worker earned above threshold, no claim triggers even if an event occurred.
+
+STEP 3: Payout Calculation
+- beta = 0.75 for STFI events, 0.65 for RSMD events
+- income_loss = W_expected - W_actual
+- raw_payout = beta × income_loss
+- fraud_deduction = amount deducted based on GPS distance mismatch
+- final_payout = min(raw_payout - fraud_deduction, sum_insured)
+
+Example: W_expected Rs.4000, W_actual Rs.1100, STFI confirmed:
+- threshold = Rs.2400. Actual Rs.1100 < Rs.2400 → claim triggers
+- income_loss = Rs.2900
+- raw_payout = 0.75 × Rs.2900 = Rs.2175
+- No fraud deduction → final_payout = Rs.2175 (under sum_insured cap)
+
+Why was claim NOT triggered examples:
+- Worker earned Rs.3500 with W_expected Rs.4000: 3500 > 2400 threshold → no claim
+- RSMD event but fraud_action = AUTO_REJECT → claim rejected
+- No event confirmed (just low income day) → no parametric trigger
