@@ -1,0 +1,1 @@
+{"primary_zone": ["Adyar", "Anna Nagar", "Guindy", "Mylapore", "Pallikaranai", "Perambur", "Sholinganallur", "T Nagar", "Tambaram", "Velachery"], "fraud_action": ["AUTO_APPROVE", "SOFT_FLAG", "HARD_FLAG", "AUTO_REJECT"], "rsmd_event_type": ["", "bandh", "curfew", "strike", "political_death", "protest"]}

@@ -1,0 +1,8 @@
+VELACHERY: High flood risk zone (0.85). Low elevation, poor drainage. Highly susceptible to inundation during Northeast Monsoon. Historically flooded in 2015, 2021, and 2023. Expect severe disruption when rainfall exceeds 80mm in 24 hours.
+ADYAR: High flood risk zone (0.80). Near river banks. Vulnerable to water release from Chembarambakkam lake. Frequent waterlogging.
+SHOLINGANALLUR: High risk (0.70). IT corridor built on marshlands. High traffic disruption during heavy rains.
+T_NAGAR: Moderate to high risk (0.65). Central commercial hub. Prone to severe waterlogging due to heavy concrete cover and old drainage. High economic disruption.
+GUINDY: Moderate risk (0.55). Industrial and transit hub. Waterlogging at underpasses.
+TAMBARAM: Moderate risk (0.40). Suburban area. Better elevation but localized flooding near lakes.
+ANNA_NAGAR: Low risk (0.35). Well-planned grid layout with good drainage. Minimal prolonged disruption.
+PORUR: Low risk (0.30). Good elevation. Rarely experiences catastrophic flooding.

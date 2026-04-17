@@ -1,0 +1,125 @@
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\callback.py:385: UserWarning: [14:16:52] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\callback.py:385: UserWarning: [14:16:52] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\callback.py:385: UserWarning: [14:16:52] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\callback.py:385: UserWarning: [14:16:52] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\callback.py:385: UserWarning: [14:16:52] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  self.starting_round = model.num_boosted_rounds()
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\xgboost\training.py:200: UserWarning: [14:16:52] WARNING: C:\actions-runner\_work\xgboost\xgboost\src\learner.cc:782: 
+Parameters: { "use_label_encoder" } are not used.
+
+  bst.update(dtrain, iteration=i, fobj=obj)
+=== SECTION 2: DATA LOADING AND PREPROCESSING ===
+Loaded training data: 520 rows, 77 total columns.
+Total rows: 520, feature count = 70
+Class distribution:
+claim_triggered
+0    506
+1     14
+Name: count, dtype: int64
+Count where y_class=1: 14
+scale_pos_weight: 36.14
+
+=== SECTION 3: TASK 1 CLASSIFIER TRAINING ===
+Fold 1 | Best Iter: 0 | Train AUC: 1.0000 | Val AUC: 1.0000 | Val Prec: 1.0000 | Val Rec: 1.0000 | Val F1: 1.0000
+Fold 2 | Best Iter: 0 | Train AUC: 1.0000 | Val AUC: 1.0000 | Val Prec: 1.0000 | Val Rec: 1.0000 | Val F1: 1.0000
+Fold 3 | Best Iter: 2 | Train AUC: 1.0000 | Val AUC: 1.0000 | Val Prec: 0.7500 | Val Rec: 1.0000 | Val F1: 0.8571
+Fold 4 | Best Iter: 2 | Train AUC: 1.0000 | Val AUC: 1.0000 | Val Prec: 1.0000 | Val Rec: 0.6667 | Val F1: 0.8000
+Fold 5 | Best Iter: 1 | Train AUC: 1.0000 | Val AUC: 1.0000 | Val Prec: 1.0000 | Val Rec: 1.0000 | Val F1: 1.0000
+
+--- Classifier Cross-Validation Summary ---
+Mean Val AUC: 1.0000 ± 0.0000
+Mean Val Recall: 0.9333
+Mean Val F1: 0.9314
+
+=== SECTION 4: TASK 2 REGRESSOR TRAINING ===
+Positive rows used for regression training: 14
+Fold 1 | Best Iter: 0 | Train RMSE: 702.28 | Val RMSE: 182.05 | Val MAE: 125.72
+Fold 2 | Best Iter: 196 | Train RMSE: 113.89 | Val RMSE: 453.03 | Val MAE: 400.70
+Fold 3 | Best Iter: 1 | Train RMSE: 443.11 | Val RMSE: 819.42 | Val MAE: 510.37
+
+--- Regressor Summary ---
+Mean Val RMSE: 484.83 (Target < 150 INR)
+Mean Val MAE: 345.60 (Target < 100 INR)
+WARNING: Regressor targets not fully met.
+
+=== SECTION 6: FORMULA VALIDATION ===
+Column compared      | Formula MAE     | Max error  | Pass/Fail
+-----------------------------------------------------------------
+weekly_premium_inr   | 3.58            | 13.52      | Pass
+claim_amount_inr     | 138.95          | 407.78     | Fail
+sum_insured          | 0.00            | 0.01       | Pass
+Failed rows for weekly_premium_inr (>5 INR diff):
+  Worker: W001 Week: 2024-04-08 | Formula: 103.38 CSV: 111.1
+  Worker: W001 Week: 2024-05-13 | Formula: 108.98 CSV: 116.17
+  Worker: W001 Week: 2024-07-01 | Formula: 125.71 CSV: 120.09
+  Worker: W001 Week: 2024-07-15 | Formula: 124.97 CSV: 118.8
+  Worker: W001 Week: 2024-07-22 | Formula: 124.31 CSV: 117.52
+Failed rows for claim_amount_inr (>5 INR diff):
+  Worker: W001 Week: 2024-10-21 | Formula: 1321.67 CSV: 1416.07
+  Worker: W001 Week: 2024-10-28 | Formula: 2373.84 CSV: 2225.48
+  Worker: W001 Week: 2024-12-02 | Formula: 1697.55 CSV: 1591.46
+  Worker: W001 Week: 2024-12-09 | Formula: 1382.09 CSV: 1480.81
+  Worker: W002 Week: 2024-12-02 | Formula: 1566.26 CSV: 1678.14
+
+=== SECTION 7: TEST FILES VALIDATION ===
+
+Result Table: T001_enriched.csv
+T001   | 2024-11-04 | ActCLM:1 PRD:1 | ActAMT:1923.93 PRD_AMT:2052.19 | PROB:0.525 | AUTO_APPROVE | F.Rev:False
+T001   | 2024-12-02 | ActCLM:1 PRD:1 | ActAMT:1706.71 PRD_AMT:1592.93 | PROB:0.525 | AUTO_APPROVE | F.Rev:False
+Summary T001_enriched.csv | Rows: 13 | Correct: 13 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T002_enriched.csv
+T002   | 2024-06-17 | ActCLM:1 PRD:1 | ActAMT:839.28 PRD_AMT:839.28 | PROB:0.525 | AUTO_APPROVE | F.Rev:True
+T002   | 2024-07-15 | ActCLM:1 PRD:1 | ActAMT:1172.93 PRD_AMT:1172.93 | PROB:0.525 | AUTO_APPROVE | F.Rev:False
+Summary T002_enriched.csv | Rows: 9 | Correct: 9 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T003_enriched.csv
+Summary T003_enriched.csv | Rows: 5 | Correct: 5 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T004_enriched.csv
+T004   | 2024-07-15 | ActCLM:1 PRD:1 | ActAMT:1854.23 PRD_AMT:1730.62 | PROB:0.525 | AUTO_APPROVE | F.Rev:False
+T004   | 2024-08-12 | ActCLM:1 PRD:1 | ActAMT:2113.24 PRD_AMT:2254.12 | PROB:0.525 | AUTO_APPROVE | F.Rev:True
+T004   | 2024-09-16 | ActCLM:1 PRD:1 | ActAMT:1537.12 PRD_AMT:1639.59 | PROB:0.525 | AUTO_APPROVE | F.Rev:False
+Summary T004_enriched.csv | Rows: 18 | Correct: 18 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T005_enriched.csv
+T005   | 2024-08-12 | ActCLM:1 PRD:1 | ActAMT:3258.86 PRD_AMT:3476.12 | PROB:0.525 | AUTO_APPROVE | F.Rev:True
+Summary T005_enriched.csv | Rows: 26 | Correct: 26 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T006_enriched.csv
+T006   | 2024-09-23 | ActCLM:1 PRD:1 | ActAMT:626.11 PRD_AMT:1252.22 | PROB:0.525 | SOFT_FLAG    | F.Rev:True
+Summary T006_enriched.csv | Rows: 9 | Correct: 9 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T007_enriched.csv
+Summary T007_enriched.csv | Rows: 13 | Correct: 13 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+Result Table: T008_enriched.csv
+Summary T008_enriched.csv | Rows: 9 | Correct: 9 | Acc: 100.0% | Missed: 0 | FalseAlarms: 0
+
+=== SECTION 8: SHAP AND FEATURE IMPORTANCE ===
+Traceback (most recent call last):
+  File "C:\Users\tarun aadaarsh\GIGEASE-GUIDEWIRE-DATASET\gigease_financial_model.py", line 525, in <module>
+    explainer = shap.TreeExplainer(final_clf)
+  File "C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\shap\explainers\_tree.py", line 278, in __init__
+    self.model = TreeEnsemble(model, self.data, self.data_missing, model_output)
+  File "C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\shap\explainers\_tree.py", line 1261, in __init__
+    self._set_xgboost_model_attributes(
+  File "C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\shap\explainers\_tree.py", line 1506, in _set_xgboost_model_attributes
+    loader = XGBTreeModelLoader(self.original_model)
+  File "C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\shap\explainers\_tree.py", line 2104, in __init__
+    self.base_score = float(learner_model_param["base_score"])
+ValueError: could not convert string to float: '[5E-1]'

@@ -1,0 +1,14 @@
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1775210792.038831   30404 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\google\api_core\_python_version_support.py:263: FutureWarning: You are using a Python version (3.10.9) which Google will stop supporting in new releases of google.api_core once it reaches its end of life (2026-10-04). Please upgrade to the latest Python version, or at least Python 3.11, to continue receiving updates for google.api_core past that date.
+  warnings.warn(message, FutureWarning)
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1775210794.435916   30404 port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+Traceback (most recent call last):
+  File "C:\Users\tarun aadaarsh\GIGEASE-GUIDEWIRE-DATASET\test_gigease_inference.py", line 5, in <module>
+    from gigease_rag_explainer import generate_claim_explanation
+  File "C:\Users\tarun aadaarsh\GIGEASE-GUIDEWIRE-DATASET\gigease_rag_explainer.py", line 6, in <module>
+    from langchain_huggingface import HuggingFaceEndpoint, HuggingFaceInferenceAPIEmbeddings
+ImportError: cannot import name 'HuggingFaceInferenceAPIEmbeddings' from 'langchain_huggingface' (C:\Users\tarun aadaarsh\AppData\Local\Programs\Python\Python310\lib\site-packages\langchain_huggingface\__init__.py)
