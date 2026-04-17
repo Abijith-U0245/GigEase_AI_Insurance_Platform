@@ -11,7 +11,7 @@
 | **Coverage** | STFI + RSMD Combined Parametric Policy |
 | **Payout Speed** | Under 10 minutes — zero worker action |
 | **Premium Range** | ₹25–₹250/week (ML-adjusted, zone-aware) |
-| **Demo Video** | [▶ Watch 2-minute demo](YOUR_VIDEO_LINK_HERE) |
+| **Demo Video** | [▶ Watch 2-minute demo](https://youtu.be/W9BuAyNVfU8?si=SQ-h_7hhknkECGSw) |
 
 ---
 
