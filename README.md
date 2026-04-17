@@ -2,7 +2,11 @@
 
 > *"When a flood hits Velachery and every enrolled rider receives money in their account before the roads even clear — that is not a demo. That is what this technology was built for."*
 
-Link: https://drive.google.com/file/d/1gKdPuO2ObIksVcTeWASy1Fr8-T48VCzf/view?usp=sharing
+Use Case : https://drive.google.com/file/d/1gKdPuO2ObIksVcTeWASy1Fr8-T48VCzf/view?usp=sharing
+
+HLD : https://drive.google.com/file/d/1DjhPrMJG7GqCdAq-D4aHKaUqMAyzhDBv/view?usp=sharing
+
+HLD Doc: https://drive.google.com/file/d/1gKdPuO2ObIksVcTeWASy1Fr8-T48VCzf/view?usp=sharing
 
 **India's First Parametric Insurance Platform for Food Delivery Partners**
 
@@ -447,7 +451,7 @@ GigEase uses three purpose-built database layers, each optimised for its specifi
 
 ### 7.1 Layer 1 — PostgreSQL OLTP (Transactional Core, 19 Tables)
 
-https://drive.google.com/file/d/1WqTha5fp-3yVgSlaGgBZLOt-tqF842W5/view?usp=sharing
+Schema Architecture: https://drive.google.com/file/d/1WqTha5fp-3yVgSlaGgBZLOt-tqF842W5/view?usp=sharing
 
 Full ACID compliance for all financial transactions. Row-level security (GPS data access restricted to fraud service DB role only). PgBouncer connection pooling: 1,000 concurrent app workers share 50 actual DB connections. TimescaleDB extension: GPS data partitioned by week — queries hit only 1 partition instead of full table.
 
@@ -471,7 +475,7 @@ Full ACID compliance for all financial transactions. Row-level security (GPS dat
 
 ### 7.2 Layer 2 — Apache Cassandra (Real-Time Fraud Signals, 7 Tables)
 
-https://drive.google.com/file/d/1I64uySEREgQ2fsCWAqIMeaSKQD3pYAqf/view?usp=sharing
+Schema Architecture: https://drive.google.com/file/d/1I64uySEREgQ2fsCWAqIMeaSKQD3pYAqf/view?usp=sharing
 
 7 denormalized tables. No joins — ever. Each table keyed for exactly one access pattern. GPS stream: 1M riders × 1 ping/60s = **16,667 req/s peak**. Kafka buffers the stream; Cassandra consumer batch-inserts 1,000 records at a time.
 
@@ -488,6 +492,8 @@ https://drive.google.com/file/d/1I64uySEREgQ2fsCWAqIMeaSKQD3pYAqf/view?usp=shari
 > **Key design insight:** `fraud_events_by_partner` and `fraud_events_by_time` contain the same logical data written to two different tables. This is deliberate Cassandra denormalization — each serves a different query pattern without joins, maintaining sub-millisecond read times at millions of records.
 
 ### 7.3 Layer 3 — PostgreSQL Analytics (Star Schema)
+
+Schema Architechture: https://drive.google.com/file/d/1BCCawjJtCYigT01tUTChpf_f3Yr5pTcq/view?usp=sharing
 
 Dimensional model for ICR monitoring, fraud trend analysis, and zone risk reporting. Apache Spark ETL loads nightly from OLTP. Cassandra fraud aggregates feed `avg_fraud_score` in `fact_partner_risk`.
 
@@ -601,8 +607,6 @@ Web3.py → Polygon blockchain audit trail
 ```
 
 ### 9.2 Data Flow Timings
-
-https://drive.google.com/file/d/1BCCawjJtCYigT01tUTChpf_f3Yr5pTcq/view?usp=sharing
 
 | Pipeline | Frequency | Scale |
 |---|---|---|
@@ -724,6 +728,8 @@ For demo: Hardhat local testnet. Same contract, zero gas cost, works offline dur
 ---
 
 ## 12. Complete Technology Stack
+
+HLD Doc: https://drive.google.com/file/d/1gKdPuO2ObIksVcTeWASy1Fr8-T48VCzf/view?usp=sharing
 
 | Category | Technology | Why Chosen |
 |---|---|---|
