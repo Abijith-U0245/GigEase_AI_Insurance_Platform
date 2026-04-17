@@ -24,8 +24,8 @@
 | Deliverable | Link | Status |
 |---|---|---|
 | 🎬 **Phase 3 Demo Video (5 min)** | `[ADD YOUR PHASE 3 VIDEO LINK HERE]` | ⏳ Upload before April 17 |
-| 📊 **Final Pitch Deck (PDF)** | `https://drive.google.com/file/d/14ix5F6Q2dUPkAYkqDYGih2rvi_ccVFl-/view?usp=drivesdk` | ⏳ Upload before April 17 |
-| 📊 **GigEase Final Documentation - Project Guide (PDF)** | `https://drive.google.com/file/d/1AS7BuFD8qWVkgL90dRts0fstnaidBkqN/view?usp=drivesdk` | ⏳ Upload before April 17 |
+| 📊 **Final Pitch Deck (PDF)** | https://drive.google.com/file/d/14ix5F6Q2dUPkAYkqDYGih2rvi_ccVFl-/view?usp=drivesdk | ⏳ Upload before April 17 |
+| 📊 **GigEase Final Documentation - Project Guide (PDF)** | https://drive.google.com/file/d/1AS7BuFD8qWVkgL90dRts0fstnaidBkqN/view?usp=drivesdk | ⏳ Upload before April 17 |
 | 🎬 **Phase 2 Demo Video** | [▶ Watch on YouTube](https://youtu.be/W9BuAyNVfU8?si=SQ-h_7hhknkECGSw) | ✅ Submitted |
 | 📁 **All Project Documents & Assets** | [📂 Google Drive](https://drive.google.com/file/d/1AS7BuFD8qWVkgL90dRts0fstnaidBkqN/view?usp=drivesdk) | ✅ Public |
 | 💻 **Source Code** | [GitHub Repository](https://github.com/Abijith-U0245/GigEase_AI_Insurance_Platform) | ✅ Public |
@@ -225,25 +225,25 @@ def initiate_payout(upi_id: str, amount_inr: float, claim_id: str) -> dict:
 
 ```
 ┌──────────────────────────────────────────────────────────┐
-│  📩  CLAIM DETECTED                         06:01 AM     │
-│  "Flood alert in Velachery. Your claim is being          │
-│   processed automatically — no action needed."           │
+│  📩  CLAIM DETECTED                         06:01 AM     
+│  "Flood alert in Velachery. Your claim is being          
+│   processed automatically — no action needed."           
 ├──────────────────────────────────────────────────────────┤
-│  💸  PAYOUT CREDITED                        06:11 AM     │
-│  "₹2,595 credited to rajan.k@upi.                       │
-│   UTR: RZNP20251105. Claim ID: CLM-W001-STFI"           │
+│  💸  PAYOUT CREDITED                        06:11 AM     
+│  "₹2,595 credited to rajan.k@upi.                       
+│   UTR: RZNP20251105. Claim ID: CLM-W001-STFI"           
 ├──────────────────────────────────────────────────────────┤
-│  🔔  PREMIUM DEDUCTED                       Every Mon    │
-│  "Your weekly premium of ₹89 has been auto-deducted     │
-│   from your Zomato earnings. Coverage active."          │
+│  🔔  PREMIUM DEDUCTED                       Every Mon    
+│  "Your weekly premium of ₹89 has been auto-deducted     
+│   from your Zomato earnings. Coverage active."          
 ├──────────────────────────────────────────────────────────┤
-│  💰  SALARY PROTECTED                       Same day     │
-│  "Bandh disruption detected. ₹1,739 added to your      │
-│   account automatically."                               │
+│  💰  SALARY PROTECTED                       Same day     
+│  "Bandh disruption detected. ₹1,739 added to your      
+│   account automatically."                               
 ├──────────────────────────────────────────────────────────┤
-│  🏅  NCD UPDATED                            Every Sun    │
-│  "3 clean weeks completed. Your premium drops to        │
-│   ₹82 from next Monday. Keep going!"                    │
+│  🏅  NCD UPDATED                            Every Sun    
+│  "3 clean weeks completed. Your premium drops to        
+│   ₹82 from next Monday. Keep going!"                    
 └──────────────────────────────────────────────────────────┘
 ```
 
@@ -287,23 +287,23 @@ with conn.transaction():
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  Hey Deepa 👋                          Swiggy Partner   ║
+║  Hey Deepa 👋                          Swiggy Partner   
 ╠══════════════════════════════════════════════════════════╣
-║  THIS WEEK                                               ║
-║  Earnings Earned:   ₹4,312    Coverage: ₹6,750 ✓        ║
-║  Income Protected:  ₹3,847    Policy:   ACTIVE          ║
-║  Threshold:         ₹2,700    NCD:      6% (3 clean wks)║
+║  THIS WEEK                                               
+║  Earnings Earned:   ₹4,312    Coverage: ₹6,750 ✓        
+║  Income Protected:  ₹3,847    Policy:   ACTIVE          
+║  Threshold:         ₹2,700    NCD:      6% (3 clean wks)
 ╠══════════════════════════════════════════════════════════╣
-║  ⚡  FLOOD ALERT — Velachery                            ║
-║     Your claim is processing. No action needed.         ║
+║  ⚡  FLOOD ALERT — Velachery                            
+║     Your claim is processing. No action needed.         
 ╠══════════════════════════════════════════════════════════╣
-║  Protection Score: ████████████████████░░  94/100       ║
-║  Next Premium: ₹79.23 deducted Monday                   ║
+║  Protection Score: ████████████████████░░  94/100       
+║  Next Premium: ₹79.23 deducted Monday                   
 ╠══════════════════════════════════════════════════════════╣
-║  RECENT ACTIVITY                                         ║
-║  ✅ ₹2,595 credited (Flood — Nov 5)                     ║
-║  🔔 ₹89 premium deducted (Nov 4)                        ║
-║  🏅 NCD updated to 6% (Nov 3)                           ║
+║  RECENT ACTIVITY                                         
+║  ✅ ₹2,595 credited (Flood — Nov 5)                     
+║  🔔 ₹89 premium deducted (Nov 4)                        
+║  🏅 NCD updated to 6% (Nov 3)                           
 ╚══════════════════════════════════════════════════════════╝
 ```
 
@@ -331,27 +331,27 @@ with conn.transaction():
 
 ```
 ╔══════════════════════════════════════════════════════════╗
-║  GIGEASE OPERATIONS DASHBOARD                            ║
+║  GIGEASE OPERATIONS DASHBOARD                            
 ╠══════════╦══════════╦══════════╦═════════════════════════╣
-║ Pool:    ║ ICR:     ║ Active   ║ Fraud Today:           ║
-║ ₹42.87L  ║ 64.2%   ║ Policies:║ Flagged: 3             ║
-║ ✓ >30%  ║ ✓HEALTHY ║ 1,247    ║ Rejected: 1            ║
+║ Pool:    ║ ICR:     ║ Active   ║ Fraud Today:           
+║ ₹42.87L  ║ 64.2%   ║ Policies:║ Flagged: 3             
+║ ✓ >30%  ║ ✓HEALTHY ║ 1,247    ║ Rejected: 1            
 ╠══════════╩══════════╩══════════╩═════════════════════════╣
-║  PREDICTIVE — NEXT WEEK RISK                             ║
-║  Chennai   ████████████████████ 0.78  HIGH  (monsoon)   ║
-║  Delhi     ████████████ 0.48         MEDIUM (heat)      ║
-║  Mumbai    █████████ 0.37            LOW                 ║
-║  Kolkata   ███████ 0.31              LOW                 ║
+║  PREDICTIVE — NEXT WEEK RISK                             
+║  Chennai   ████████████████████ 0.78  HIGH  (monsoon)   
+║  Delhi     ████████████ 0.48         MEDIUM (heat)      
+║  Mumbai    █████████ 0.37            LOW                 
+║  Kolkata   ███████ 0.31              LOW                 
 ╠══════════════════════════════════════════════════════════╣
-║  LOSS RATIO TREND (12 months)                            ║
-║  Jan ██ 48%  Apr ███ 55%  Jul ████ 67%  Oct █████ 79%  ║
-║  ICR auto-adjusted: λ += 0.2% (Oct warning zone)       ║
+║  LOSS RATIO TREND (12 months)                            
+║  Jan ██ 48%  Apr ███ 55%  Jul ████ 67%  Oct █████ 79%  
+║  ICR auto-adjusted: λ += 0.2% (Oct warning zone)       
 ╠══════════════════════════════════════════════════════════╣
-║  CLAIMS TODAY: 47 total                                  ║
-║  Auto-approved: 44  |  Soft-flagged: 2  |  Rejected: 1  ║
-║  Avg processing time: 8.4 minutes                        ║
+║  CLAIMS TODAY: 47 total                                  
+║  Auto-approved: 44  |  Soft-flagged: 2  |  Rejected: 1  
+║  Avg processing time: 8.4 minutes                        
 ╠══════════════════════════════════════════════════════════╣
-║  [🌩 Trigger Simulator] [📊 ICR Monitor] [🔍 Fraud Log] ║
+║  [🌩 Trigger Simulator] [📊 ICR Monitor] [🔍 Fraud Log] 
 ╚══════════════════════════════════════════════════════════╝
 ```
 
@@ -887,7 +887,7 @@ apscheduler==3.10.4
 | 📁 **All Documents & Assets** | [Google Drive](https://drive.google.com/drive/folders/1F5CfYnu5FC5AP3F7LvtGqSQmAd2889XE) |
 | 🎬 **Phase 2 Demo Video** | [YouTube](https://youtu.be/W9BuAyNVfU8?si=SQ-h_7hhknkECGSw) |
 | 🎬 **Phase 3 Demo Video (5 min)** | `[ADD LINK BEFORE APRIL 17]` |
-| 📊 **Final Pitch Deck (PDF)** | `[ADD LINK BEFORE APRIL 17]` |
+| 📊 **Final Pitch Deck (PDF)** | [Pitch Deck](https://drive.google.com/file/d/14ix5F6Q2dUPkAYkqDYGih2rvi_ccVFl-/view?usp=drivesdk) |
 
 ---
 
