@@ -3,8 +3,8 @@ import { ShieldAlert, Activity, User, AlertTriangle } from 'lucide-react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-// Make sure token is set
-mapboxgl.accessToken = 'pk.eyJ1IjoidGFydW5hYWRhcnNoIiwiYSI6ImNtbzMwYm1lOTBjdTgycXNsdmo3ZXltcm0ifQ.YghjqpNKKh2qySKyB6wnYw';
+// Load token from environment variable (never hardcode secrets)
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN as string;
 
 interface RoutePoint {
   lat: number;

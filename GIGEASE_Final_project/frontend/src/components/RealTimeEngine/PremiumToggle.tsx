@@ -3,8 +3,8 @@ import { MapPin, Zap, Calendar, CloudRain, Newspaper, Crosshair } from 'lucide-r
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
 
-// Using the provided Mapbox token directly
-mapboxgl.accessToken = 'pk.eyJ1IjoidGFydW5hYWRhcnNoIiwiYSI6ImNtbzMwYm1lOTBjdTgycXNsdmo3ZXltcm0ifQ.YghjqpNKKh2qySKyB6wnYw';
+// Load token from environment variable (never hardcode secrets)
+mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_TOKEN as string;
 
 const ZONES = {
   VELACHERY: { lat: 12.9782, lon: 80.2209 },
