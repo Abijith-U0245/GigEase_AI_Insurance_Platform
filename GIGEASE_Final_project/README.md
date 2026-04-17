@@ -23,7 +23,7 @@
 
 | Deliverable | Link | Status |
 |---|---|---|
-| 🎬 **Phase 3 Demo Video (5 min)** | `[ADD YOUR PHASE 3 VIDEO LINK HERE]` | ⏳ Upload before April 17 |
+| 🎬 **Phase 3 Demo Video (5 min)** | https://youtu.be/Ucy5tuF8Iqw?si=oPGo1kVoeIIdhKlC | ⏳ Upload before April 17 |
 | 📊 **Final Pitch Deck (PDF)** | https://drive.google.com/file/d/14ix5F6Q2dUPkAYkqDYGih2rvi_ccVFl-/view?usp=drivesdk | ⏳ Upload before April 17 |
 | 📊 **GigEase Final Documentation - Project Guide (PDF)** | https://drive.google.com/file/d/1AS7BuFD8qWVkgL90dRts0fstnaidBkqN/view?usp=drivesdk | ⏳ Upload before April 17 |
 | 🎬 **Phase 2 Demo Video** | [▶ Watch on YouTube](https://youtu.be/W9BuAyNVfU8?si=SQ-h_7hhknkECGSw) | ✅ Submitted |
@@ -886,7 +886,7 @@ apscheduler==3.10.4
 | 🏠 **GitHub Repository** | [GigEase_AI_Insurance_Platform](https://github.com/Abijith-U0245/GigEase_AI_Insurance_Platform/tree/master/GIGEASE-GUIDEWIRE-PROTOTYPE) |
 | 📁 **All Documents & Assets** | [Google Drive](https://drive.google.com/drive/folders/1F5CfYnu5FC5AP3F7LvtGqSQmAd2889XE) |
 | 🎬 **Phase 2 Demo Video** | [YouTube](https://youtu.be/W9BuAyNVfU8?si=SQ-h_7hhknkECGSw) |
-| 🎬 **Phase 3 Demo Video (5 min)** | `[ADD LINK BEFORE APRIL 17]` |
+| 🎬 **Phase 3 Demo Video (5 min)** | [Youtube](https://youtu.be/Ucy5tuF8Iqw?si=oPGo1kVoeIIdhKlC) |
 | 📊 **Final Pitch Deck (PDF)** | [Pitch Deck](https://drive.google.com/file/d/14ix5F6Q2dUPkAYkqDYGih2rvi_ccVFl-/view?usp=drivesdk) |
 
 ---
