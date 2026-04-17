@@ -1,0 +1,12 @@
+GigEase Parametric Insurance Policy Rules
+Premium Calculation Formula: Final Premium = P_base × (1 + premium_score) × (1 + claim_loading_pct)
+Premium Score Formula: weather_risk (0.3) + humidity_component (0.2) + zone_risk_component (0.3) + season_factor (0.2)
+Loading Factor Mapping based on Zone Risk Score:
+< 0.20 -> 0% loading
+0.20 - 0.35 -> +10% loading
+0.35 - 0.50 -> +20% loading
+0.50 - 0.65 -> +35% loading
+0.65 - 0.80 -> +50% loading
+> 0.80 -> +65% loading
+STFI Trigger: Valid only if flood_alert_level >= 2 AND rainfall_mm >= 80mm in 24 hours. Triggers payout if income falls below 60% of W_expected.
+RSMD Trigger: Valid if NDMA alert is active and news sources confirm riot/strike/bandh causing city-wide disruption.

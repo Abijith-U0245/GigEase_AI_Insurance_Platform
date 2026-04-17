@@ -1,0 +1,40 @@
+GigEase Parametric Insurance Policy Rules
+
+STFI (Storm, Tempest, Flood, Inundation) Claim Trigger Rules:
+An STFI event is confirmed if any of the following occur:
+- The NDMA flood_alert_level is 2 or higher.
+- The recorded rainfall in a single day is 150mm or higher.
+- The average wind speed is 50 kmph or higher.
+- An official cyclone_warning_active flag is 1.
+
+RSMD (Riot, Strike, Malicious Damage) Claim Trigger Rules:
+An RSMD event is confirmed if:
+- The rsmd_news_source_count is 2 or higher (corroborated by dual sources).
+- The google_maps_congestion_index is 0.85 or higher on a weekday.
+- The ndma_emergency_alert_active flag is 1.
+
+Income Drop Threshold (The 60% Rule):
+A claim is ONLY triggered if the worker's w_actual (actual income) drops below 60% of their w_expected (expected income). The w_expected is dynamically adjusted based on festival multipliers (1.20x during festivals) and zone seasonal risk multipliers (0.85x in high flood risk zones during monsoon).
+
+Payout Mechanism and Betas:
+If a claim is triggered, the payout is calculated dynamically using a beta multiplier against the income loss (w_expected - w_actual).
+- STFI Severity 4 or 5: beta = 0.80
+- STFI Severity 2 or 3: beta = 0.70
+- STFI Severity 1: beta = 0.55
+- RSMD Severity 3+: beta = 0.65
+- RSMD Severity 1-2: beta = 0.50
+- Heatwave only (no STFI/RSMD): beta = 0.45
+- Default fallback beta: 0.50
+
+The payout is strictly capped by the worker's sum_insured (which scales at 1.5x their 12-week average income, clamped between 3000 and 15000 INR).
+
+Premium Loading Rules:
+Premium is composed of a generic base, a seasonal loading factor, and a claim loading factor. 
+The claim loading factor is determined by recent claims in the last 4 weeks:
+- 0 claims: 0.00% loading
+- 1 claim: 0.05% loading
+- 2 claims: 0.12% loading
+- 3+ claims: 0.25% loading
+
+Fraud Deduction Clauses:
+If GPS spoofing is detected, the payout is subjected to a strict deduction formula. Distance inflation is calculated by subtracting verified cell tower distance from the GPS reported distance. If this inflation is > 2.0 km, a deduction of 4.5 INR per km is applied. This deduction is capped at 50% of the total claim payout. Behavioral flag anomalies trigger soft-holds (50% immediate pay, 50% retained).

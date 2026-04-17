@@ -1,0 +1,18 @@
+GigEase Fraud Detection — Known Patterns and Cases
+
+GPS SPOOFING TECHNIQUES:
+1. Mock Location Apps (e.g., Fake GPS, GPS JoyStick): These apps use Android's developer mock location API to report false coordinates. Detection: Android API flag `isMockLocationEnabled` catches 90% of cases. The remaining 10% use rooted devices to bypass the flag.
+2. GPS Signal Replay: Hardware-based attack using SDR to broadcast false GPS signals. Detection: Accelerometer cross-check — phone shows no physical movement while GPS reports travel. Delta between accelerometer magnitude (should be ~9.81 m/s^2 when stationary) and GPS-implied movement is the strongest single fraud signal.
+3. VPN + Remote Desktop: Worker shares credentials with someone in a different city who files claims remotely. Detection: IP geolocation mismatch, VPN ASN detection, simultaneous login from different locations.
+
+CONFIRMED FRAUD CASES (Anonymized):
+Case F-2024-001 (Velachery, Nov 2024): 4 workers filed claims within 45 minutes of each other. All shared the same device fingerprint. GPS showed all 4 at different locations but cell towers placed them within 200m of each other. DBSCAN cluster detected. All claims rejected. Total prevented fraud: Rs.12,400.
+Case F-2024-015 (T Nagar, Dec 2024): Worker showed 12 orders during a confirmed bandh when all shops were closed. Isolation Forest flagged income_ratio_event_vs_normal = 1.8 (normal workers showed 0.1-0.3). Pre-event rejection spike detected 2 days before bandh announcement became public — insider knowledge suspected.
+Case F-2024-028 (Adyar, Nov 2024): GPS showed worker traveling at 187 km/h through residential streets. Accelerometer showed stationary phone. Cell tower placed worker 4.2km from claimed location. Mock location app detected. Claim auto-rejected.
+
+SYNDICATE PATTERNS:
+- Geographic clustering: 3+ workers living within 300m radius filing claims simultaneously
+- Temporal synchronization: Claims filed within 10-minute windows
+- Shared infrastructure: Same IP address, same device fingerprint, same WiFi BSSID
+- Uniform payouts: All claims requesting similar amounts (variance < Rs.100)
+- First-time claimants: All workers in cluster filing their first ever claim simultaneously

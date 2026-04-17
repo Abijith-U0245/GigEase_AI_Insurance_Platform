@@ -1,0 +1,19 @@
+Rajan Kumar — 5-Week Income Protection Scenario (GigEase Demo)
+Week 1 (Normal): Rajan earns Rs.4,200 delivering for Zomato in Velachery. Expected income Rs.4,050. No event. Premium Rs.52. No claim.
+Week 2 (Festival - Diwali): Festival multiplier 1.20x applied. Expected income Rs.4,860. Actual Rs.5,100 (bonus surge). Premium Rs.58 (+incentive loading). No claim triggered.
+Week 3 (STFI Flood Event): Northeast monsoon dumps 142mm rain. Velachery flooded. NDMA Level 2 alert. Rajan earns only Rs.1,106 (27% of expected Rs.4,050). Trigger fires: Rs.1,106 < 0.60 x Rs.4,050 = Rs.2,430. Payout = 0.75 x (Rs.4,050 - Rs.1,106) = Rs.2,208. Deposited via Razorpay within 4 hours. No manual claim filing needed.
+Week 4 (Recovery): Floodwaters recede. Rajan back to partial operations. Earns Rs.3,200. Expected Rs.4,050. Shortfall 21% — below 40% trigger. No claim. Premium adjusts down to baseline.
+Week 5 (RSMD Event): City-wide bandh called. T Nagar and Guindy shut. Rajan in Velachery partially affected. Earns Rs.1,800. Expected Rs.4,050. Shortfall 55.6% > 40% trigger. RSMD confirmed via 3 news sources. Payout = 0.65 x (Rs.4,050 - Rs.1,800) = Rs.1,462.
+
+Festival Calendar and Income Multipliers:
+Pongal (January 14-17): multiplier 1.15x. Moderate order surge.
+Tamil New Year (April 14): multiplier 1.10x.
+Diwali (October/November): multiplier 1.20x. Highest order volume of the year.
+Christmas/New Year (December 25 - January 1): multiplier 1.15x.
+Ramadan (variable): slight dip during fasting hours, surge at iftar time. Net multiplier 1.05x.
+
+Platform Incentive Rules (Zomato Chennai):
+Daily login bonus: Rs.50 if logged in 8+ hours. Rs.100 if 10+ hours.
+Weekly target bonus: Rs.500 for 60+ orders/week. Rs.1,000 for 80+ orders.
+Surge pricing: 1.2x-1.5x during peak hours (12-2pm, 7-10pm). Higher during rain.
+Referral bonus: Rs.200 per successful referral who completes 10 orders.
